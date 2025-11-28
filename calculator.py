@@ -1,3 +1,5 @@
+import math
+
 def add(a, b):
     return a + b
 
@@ -18,6 +20,10 @@ def power(a, b):
 def percent(a, b):
     return (a / b) * 100
  
+
+def sqrt_num(a):
+    return math.sqrt(a)
+
 print("Simple Calculator")
 print("1) Add")
 print("2) Subtract")
@@ -25,6 +31,7 @@ print("3) Multiply")
 print("4) Divide")
 print("5) Power")
 print("6) Percent (a is what percent of b)")
+print("7) Square Root")
 choice = input("Choose (1/2/3/4): ")
 x = float(input("Enter first number: "))
 y = float(input("Enter second number: "))
@@ -41,5 +48,10 @@ elif choice == "5":
     print("Result:", power(x, y))
 elif choice == "6":
     print("Result:", percent(x, y))
+
+elif choice == "7":
+    x = float(input("Enter the number: "))
+    print("Result:", sqrt_num(x))
+
 else:
     print("Invalid choice")

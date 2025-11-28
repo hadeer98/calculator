@@ -12,11 +12,15 @@ def div(a, b):
         return "Error: division by zero"
     return a / b
 
+def power(a, b):
+    return a ** b
+ 
 print("Simple Calculator")
 print("1) Add")
 print("2) Subtract")
 print("3) Multiply")
 print("4) Divide")
+print("5) Power")
 
 choice = input("Choose (1/2/3/4): ")
 x = float(input("Enter first number: "))
@@ -30,5 +34,7 @@ elif choice == "3":
     print("Result:", mul(x, y))
 elif choice == "4":
     print("Result:", div(x, y))
+elif choice == "5":
+    print("Result:", power(x, y))
 else:
     print("Invalid choice")

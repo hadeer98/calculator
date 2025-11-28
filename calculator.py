@@ -29,7 +29,9 @@ def modulus(a, b):
 
 def maximum(a, b):
     return max(a, b)
-
+def average(a, b):
+    return (a + b) / 2
+    
 print("Simple Calculator")
 print("1) Add")
 print("2) Subtract")
@@ -40,6 +42,7 @@ print("6) Percent (a is what percent of b)")
 print("7) Square Root")
 print("8) Modulus (a % b)")
 print("9) Maximum of two numbers")
+print("10) Average of two numbers")
 choice = input("Choose (1/2/3/4): ")
 x = float(input("Enter first number: "))
 y = float(input("Enter second number: "))
@@ -69,6 +72,9 @@ elif choice == "9":
     x = float(input("Enter first number: "))
     y = float(input("Enter second number: "))
     print("Result:", maximum(x, y))
-    
+elif choice == "10":
+    x = float(input("Enter first number: "))
+    y = float(input("Enter second number: "))
+    print("Result:", average(x, y))
 else:
     print("Invalid choice")

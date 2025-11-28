@@ -14,6 +14,9 @@ def div(a, b):
 
 def power(a, b):
     return a ** b
+
+def percent(a, b):
+    return (a / b) * 100
  
 print("Simple Calculator")
 print("1) Add")
@@ -21,7 +24,7 @@ print("2) Subtract")
 print("3) Multiply")
 print("4) Divide")
 print("5) Power")
-
+print("6) Percent (a is what percent of b)")
 choice = input("Choose (1/2/3/4): ")
 x = float(input("Enter first number: "))
 y = float(input("Enter second number: "))
@@ -36,5 +39,7 @@ elif choice == "4":
     print("Result:", div(x, y))
 elif choice == "5":
     print("Result:", power(x, y))
+elif choice == "6":
+    print("Result:", percent(x, y))
 else:
     print("Invalid choice")

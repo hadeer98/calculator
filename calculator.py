@@ -24,6 +24,8 @@ def percent(a, b):
 def sqrt_num(a):
     return math.sqrt(a)
 
+def modulus(a, b):
+    return a % b
 print("Simple Calculator")
 print("1) Add")
 print("2) Subtract")
@@ -32,6 +34,7 @@ print("4) Divide")
 print("5) Power")
 print("6) Percent (a is what percent of b)")
 print("7) Square Root")
+print("8) Modulus (a % b)")
 choice = input("Choose (1/2/3/4): ")
 x = float(input("Enter first number: "))
 y = float(input("Enter second number: "))
@@ -52,6 +55,11 @@ elif choice == "6":
 elif choice == "7":
     x = float(input("Enter the number: "))
     print("Result:", sqrt_num(x))
+
+elif choice == "8":
+    x = float(input("Enter first number: "))
+    y = float(input("Enter second number: "))
+    print("Result:", modulus(x, y))
 
 else:
     print("Invalid choice")

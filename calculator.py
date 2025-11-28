@@ -26,6 +26,10 @@ def sqrt_num(a):
 
 def modulus(a, b):
     return a % b
+
+def maximum(a, b):
+    return max(a, b)
+
 print("Simple Calculator")
 print("1) Add")
 print("2) Subtract")
@@ -35,6 +39,7 @@ print("5) Power")
 print("6) Percent (a is what percent of b)")
 print("7) Square Root")
 print("8) Modulus (a % b)")
+print("9) Maximum of two numbers")
 choice = input("Choose (1/2/3/4): ")
 x = float(input("Enter first number: "))
 y = float(input("Enter second number: "))
@@ -60,6 +65,10 @@ elif choice == "8":
     x = float(input("Enter first number: "))
     y = float(input("Enter second number: "))
     print("Result:", modulus(x, y))
-
+elif choice == "9":
+    x = float(input("Enter first number: "))
+    y = float(input("Enter second number: "))
+    print("Result:", maximum(x, y))
+    
 else:
     print("Invalid choice")
